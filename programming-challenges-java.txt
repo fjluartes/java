@@ -1,0 +1,124 @@
+PROGRAMMING CHALLENGES - JAVA
+(https://github.com/karan/Projects-Solutions/blob/master/README.md)
+(startup in a car)
+
+01. FIZZ BUZZ - done
+Write a program that counts up to 100, and prints out each number, but prints
+"Fizz" if the number is divisible by 3. "Buzz" if the number is divisible by
+5, and "FizzBuzz" if the number is divisible by both 3 and 5.
+Bonus: Allow the user to input a number they would like the fizzbuzz app to
+stop at. So if the user enters 163, the fizzbuzz app counts up to 163.
+
+02. CONVERT TO SECONDS - done
+Write a function that takes a number of hours and converts it to seconds. You
+could say something like var years = 24; var months = 8, etc and figure out
+how many minutes old you are.
+Optional: Use the date object to figure out how old you are in seconds.
+
+03. REMOVE FALSE VALUES FROM ARRAY
+Remove all the false values from an array. Create an array with several true,
+and false values, then filter the array returning only the true elements.
+array.filter() is a good place to start.
+
+04. REVERSE A STRING - done
+Write a function that takes a string as a parameter and reverses the string.
+"reverses" becomes "sesrever", etc
+Optional: Use a regular expression to remove everything that is not a letter.
+
+05. IS BINARY OR NOT - done
+Write a function that takes a number, and returns true if the input is binary,
+or false otherwise. Binary meaning the number only consists of 1's and 0's.
+
+06. FACTORIALS - done
+Write a function that calculates factorials. So giving the function 9 would
+output the total of 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1.
+
+07. FIBONACCI SEQUENCE - done
+Write a function that outputs a string of the fibonacci series up to the
+number specified. So fibonacciFunction(8) would return "0 1 1 2 3 5 8 13". The
+first characters are 0 & 1, then after that you add the previous number to the
+current number, and that is the next number. Look at the pattern if you don't
+understand.
+
+08. IS A PALINDROME - done
+Write a function that determines if a word is a palindrome (Ex: racecar spelled
+backwards is racecar).
+Optional: Use a regular expression to remove everything that is not a letter. Ex:
+r4c3. caar5;.,  the regular expression will remove everything so the string is
+only rccaar and rccaar is not a palindrome.
+
+09. REPEATING A STRING - done
+Write a function that takes a string and a number. Have the program make a
+string that repeats the string passed in n times. Example: repeatString("Dog",
+6); would print out "DogDogDogDogDogDog"
+
+10. LONGEST WORD IN A STRING - done
+Write a function that takes a string and returns the longest word inside that
+string.
+
+11. COUNT LETTERS IN A STRING - done
+Count Vowels in a string:
+Count the number of vowels in a string, and return the total # of vowels.
+Optional: Count the number of occurrences for each letter. Example:
+"I am the string being tested"  will return something like:
+i = 3, a = 1, m = 1, t = 4, h = 1, e = 4, s = 2, r = 1, n = 2, g = 2, b = 1, d =
+1
+
+12. CAPITALIZE FIRST LETTER OF EACH WORD
+Capitalize the first letter of each word in a string. Write a function to take
+strings as arguments
+
+13. LOOPING THROUGH NESTED ARRAYS - done
+Write a function that takes an array of arrays, and pushes the highest number
+of each array into a "largest array" array. So [[6, 18, 92], [2, 132, 4], [5,
+4, 3]] would return [92, 132, 5]   (The largest number of each array).
+
+14. CONFIRM STRING ENDING
+Write a function that takes two parameters: a string, and another string. If
+the second string is the last part of the first string return true, otherwise
+return false. Example: stringCheck("Hello I am tommy", "my"); would return
+true because "my" is the last section of "Hello I am tommy".
+
+15. CREATE DECKS OF CARDS
+Write a function that takes a number. Create that many decks of cards and shuffle
+the deck.
+Bonus: Take number of players as another argument and pass all the cards out to
+those players.
+
+PROJECTS:
+16. USER WAS HERE
+Write an app that greets the user with a form so they can submit their name.
+Store the names in a database and display all the names on a page.
+
+17. COIN FLIP - done
+Write a program that asks the player to choose heads or tails, then have the
+program randomly choose "Heads" or "Tails". Let the player know if they won or
+lost and ask if they want to play again. Bonus: Add a betting feature. Ask the
+player how much he would like to bet. If player wins/loses, add/subtract the
+amount they bet to their total money and let the user know how much money they
+have.
+
+18. TIC-TAC-TOE
+Write a tic-tac-toe game either in the command line or for the browser. Once
+the game is finished offer to play again and count how many wins and losses
+the user has. You can make the computer player choose its position randomly,
+or make calculations to make the game more difficult to win.
+
+19. BLACKJACK - done
+First write a blackjack game in the command line. You can do it without card
+images, but once you finish try finding a collection of images and taking the
+blackjack game to the browser. Give the player some cash and allow him to make
+bets. Make sure you apply all the rules of blackjack and play several times to
+fix any bugs. Make the computer stay once his hard hand is 17 or higher.
+
+20. AIRLINE / HOTEL RESERVATION SYSTEM
+Create a reservation system which books airline seats or hotel rooms. It
+charges various rates for particular sections of the plane or hotel. Example,
+first class is going to cost more than coach. Hotel rooms have penthouse
+suites which cost more. Keep track of when rooms will be available and can be
+scheduled.
+
+OTHERS
+21. FILE I/O, ARRAY, FUNCTION, STRING
+Get contents of an external file (table, etc.) and store it in a two-dimensional
+array, and display the array by a function call

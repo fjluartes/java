@@ -1,0 +1,44 @@
+OBJECT-ORIENTED PROGRAMMING (Ch7: Objectville)
+INHERITANCE TREE
+1. Look for objects that have common attributes and behaviors.
+2. Design a class that represents the common state and behavior. (superclass)
+3. Decide if a subclass needs behaviors(method implementations) that are specific
+to that particular subclass type.
+4. Look for more opportunities to use abstraction, by finding two or more
+subclasses that might need common behavior. (superclass -> subclass -> leaf
+subclass)
+5. Finish the class hierarchy.
+
+IS-A
+- class inheritance
+* subclass extends superclass
+* subclass IS-A superclass
+* subclass IS-A applies to all its superclasses
+e.g. Triangle IS-A Shape, Cat IS-A Feline
+
+HAS-A
+- instance variable
+* class HAS-A instance variable
+* class has a _reference_ to instance variable
+e.g. Bathroom HAS-A Tub
+
+ACCESS LEVELS
+_public_ members are inherited
+_private_ members are not inherited
+
+POLYMORPHISM
+- any subclass of a supertype can be substituted where the supertype is expected.
+* reference type can be a superclass of the actual object type
+e.g. Animal w = new Wolf();
+* polymorphic arguments and return types
+
+OVERRIDING
+- changing method implementation in subclasses
+- the methods are the contract
+* arguments must be the same, and return types must be compatible
+* the method can't be less accessible
+
+OVERLOADING
+- changing the arguments in a method in subclasses
+* two methods with the same name but different argument lists
+* no polymorphism

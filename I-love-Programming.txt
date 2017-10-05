@@ -1,0 +1,395 @@
+MP #1 (Switch Case) - done
+
+Make a program that will convert US Dollar, Won, Yen, Dirhams and Pounds to Philippines Peso. The program will loop and will exit if the user wants to. Restriction is a must.
+
+OUTPUT:
+
+[A]US->PH
+[B]Won->PH 
+[C]Yen->PH 
+[D]Dirhams->PH
+[E]Pounds-> PH
+
+Enter choice: a
+US->PH
+
+Enter *Dollar count: 5 (Example, USD is 40 in PHP)
+Your money is 200
+
+Do you want to enter again?[Y/N]: y
+
+
+==========================================================
+MP #2 - done
+
+Write a program that produces a bill and coin breakdown for an amount of money. Initialize the amount in float variable known as dollars and use the cents variable to keep track of the amount not yet converted to bills and coins. You will have to make use of integer arithmetic and the remainder in this program. The program will loop and will exit if the user wants to. Restriction is a must.
+ 
+ 
+Variables: 
+dollars	(float)
+cents	(int)
+ 
+OUTPUT:
+Enter Dollars: 7.73
+
+*****************
+The coin breakdown for *7.73 dollars is:
+
+Dollar Bills:	7
+Fifty Cents:	1
+Twenty cents:	1
+Ten cents:		0
+Five cents:		0
+One cents:		3
+
+Do you want to enter again?[Y/N]: y
+
+
+==========================================================
+MP #3 - done
+
+Write a program that accepts two numbers and prints the following information below. The program will loop and will exit if the user wants to. Restriction is a must.
+ 
+Variables:
+first
+second
+ 
+OUTPUT:
+
+First number:  7
+Second number: 2
+
+*****************
+> The second number goes into first *3 times with a remainder of *1.
+> The quotient is 3.5
+
+Do you want to enter again?[Y/N]: y
+
+
+==========================================================
+MP #4 - done
+
+Write a program to prints out a customer bill for Ajax Auto Repair. The parts and labor charges are inputs and a 6 percent sales tax is charged on parts but not on labor. Your program should display the following information. 
+ 
+Variables:
+Parts
+Labor
+SalesTax
+Total
+ 
+OUTPUT:
+
+Enter PARTS: 104.50
+Enter LABOR: 182.15
+            AJAX AUTO REPAIR
+            SERVICE INVOICE
+PARTS                                    $104.50
+LABOR                                     182.15
+SALES TAX                                 6.27
+TOTAL                                    $292.92
+
+
+==========================================================
+MP #5 - done
+
+Write a program that will accept keyboard input of various coins and return the total value. The program will loop and will exit if the user wants to. Restriction is a must.
+ 
+Variables:
+Fifty, Twenty, Ten, Five, One
+Total (to accumulate the value of the inputs)
+ 
+OUTPUT:
+
+Fifty cents?	3
+Twenty cents? 	2
+Ten cents?     	1
+Five cents?    	2
+One cents?      3
+
+*****************
+Your total is: $2.13	
+
+
+Do you want to enter again?[Y/N]: y
+
+
+==========================================================
+MP #6 - done 
+
+Write a program that accepts a number of seconds from the keyboard and converts it into days, hours, minutes, and seconds. Use integer arithmetic and the remainder operator. The program will loop and will exit if the user wants to. Restriction is a must.
+ 
+ 
+Variables:
+seconds
+ 
+
+OUTPUT:
+
+How many seconds? 106478
+
+*****************
+Day/s:		1
+Hour/s:		5
+Minutes:	34
+Seconds:	38
+ 
+ 
+Do you want to enter again?[Y/N]: y
+ 
+
+==========================================================
+MP #7 - done
+
+Write a program to assign a letter grade given a numeric score: 90 or above is an a; 80, B; 70, C; 60, D; and below 60, F. The program should continue to accept until a negative number is input. The program should continue to accept values until a negative number is input. The program should print how many of each letter grade were assigned after the input is completed. Use else if construct in construct in your program.
+ 
+Variables
+score  (score input)
+a_s, b_s, c_s, d_s, f_s (counters for letter grades)
+ 
+Output
+SCORE? 92
+   	THE GRADE IS A
+SCORE? 90
+	THE GRADE IS A
+SCORE? 84
+	THE GRADE IS B
+SCORE? 88
+	THE GRADE IS B
+SCORE? 64
+	THE GRADE IS C
+SCORE? 34
+	THE GRADE IS F
+
+*****************
+COUNTER:
+
+2			A’s
+2          	B’s
+1   		C’s
+0      		D’s
+1       	F’s
+
+
+==========================================================
+MP #8 - done
+
+Create a program that will let the user input letters and numbers. Then the program will display the designated ASCII code for each inputted letters and numbers. Then you will get the sum and average. The program must loop. The program must count user's input. Restriction is a must. :)
+ 
+OUTPUT: 
+ 
+Enter String: MaAn23
+Ascii Code: [M]=77 [a]=97 [A]=65 [n]=110 [2]=50 [3]=51
+Sum is: 	450
+Average: 	75
+
+Number of times you input numbers: 1
+Do you want to enter again?[Y/N]: y
+ 
+
+==========================================================
+MP #9 - done
+ 
+Create a program that will let the user input numbers. If the ASCII value of the number is ODD, the program will display the ASCII Code of the number and a message, "ASCII value is Odd" otherwise will display "ASCII value is Even". After that the program will get the sum and average of the inputted numbers NOT the ASCII value, okay? :) xD Restriction is a MUST. :)
+ 
+OUTPUT: 
+ 
+Enter Numbers: 123456
+ 
+ 
+*****************
+[1]=49 Ascii Value is Odd
+[2]=50 Ascii Value is Even
+[3]=51 Ascii Value is Odd
+[4]=52 Ascii Value is Even
+[5]=53 Ascii Value is Odd
+[6]=54 Ascii Value is Even
+ 
+Sum is: 21
+Average: 3.5 
+ 
+Number of times you input numbers: 1
+Do you want to enter again?[Y/N]: y
+ 
+ 
+==========================================================
+MP #10 - done
+ 
+Create a program that will display the hidden message. Restriction is a must. Use this mapping below as your reference. Restriction is a MUST! :)
+
+'!'=A, '@'=B,  '#'=C, '$'=D, '%'=E, '^'=F , '&'=G, '*'=H , '('=I , ')'=J, '-'=K, '_'=L, '+'=M, '='=N, '{'=O, '}'=P, ':'=Q, ';'=R, '|'=S, '>'=T, '<'=U, '?'=V, '/'=W, '['=X, ']'=Y, '.'=Z '~'=SPACE
+ 
+OUTPUT:
+
+Enter Message: &{$ @_%|| ]{< -%%} (> <} &{{$_<#-
+ 
+ 
+*****************
+
+Hidden Message= _________________________ 
+ 
+Do you want to enter again?[Y/N]: y
+
+
+==========================================================
+MP #11 - done
+ 
+Make a quiz program with 10 questions. But will only display 5 random questions from the 10 questions you have. Every question has 10 points. If the user choose a wrong answer, it will deduct 5 points. User has 2 lives only. And if the user got a perfect score (50 points), a bonus question will appear to get another 50 points. A total of 100 points. Restriction is a must and the program will loop till the user wants to play. (If u want to add highscore, go lang.)
+
+OUTPUT:
+
+Q1) Who invented flourescent lamp?
+a) Agapito Flores 
+c) Franz Maglunog
+b) Julius Endaya 
+d) Christian Benipayo
+
+Answer: A
+
+Correct!! You earned 10 points! 
+Your SCORE: 10 points
+
+(PS: Kunwari iba iba questions ah. Katamad mag type eh. Hahahaha)
+
+Q2) Who invented flourescent lamp?
+a) Agapito Flores 
+c) Franz Maglunog
+b) Julius Endaya 
+d) Christian Benipayo
+
+Answer: A
+
+Correct!! You earned 10 points!
+Your SCORE: 20 points
+
+Q3)Who invented flourescent lamp?
+c) Franz Maglunog
+b) Julius Endaya 
+d) Christian Benipayo
+
+Answer: C
+
+Sorry the correct answer is letter A. Deducted 5 points.
+Your SCORE: 15 points
+
+You only have 1 credit/s left. Do you want to continue? [Y/N]: N
+
+Congrats! You only got, 15 points!
+
+Do you want to play again? [Y/N]: N
+
+
+==========================================================
+MP #12 - done
+ 
+Create a program that will let the user input a word and then display the word in reverse using a for loop. If the program encounters a vowel in lower case convert it to uppercase. If it encounters a vowel in uppercase convert it to lowercase. The program will loop and will exit if the user wants to. Restriction is a must.
+ 
+OUTPUT:
+
+Enter Word: gotohell
+llEhOtOg
+ 
+Enter Word: BURNINHELL
+LLeHNiNRuB
+ 
+Enter Word: DiEInvAiN
+NIavnieID
+
+Do you want to enter again?[Y/N]: y
+
+
+==========================================================
+MP #13 - done
+
+Create a program that will let the user input 15 numbers using a FOR loop and storing each no. in an array variable named Stored.
+ 
+Then use another for loop to display all nos. in the even indexes of the array  *assuming that index[0] is also an even number*. Then, get these inputted numbers total.
+ 
+Then use another for loop to display the numbers in the odd indexes of the array. Then also get these numbers total value. *exclude index[0]*. The program will loop and will exit if the user wants to. Restriction is a must.
+ 
+OUTPUT:
+//First for loop. Enter value for each indexes.
+ 
+Enter Numbers below:
+
+index[0]:5
+index[1]:2
+index[2]:4
+index[3]:7
+index[4]:3
+index[5]:1
+index[6]:8
+index[7]:6
+index[8]:3
+index[9]:1
+index[10]:4
+index[11]:2
+index[12]:5
+index[13]:9
+index[14]:0
+index[15]:3
+ 
+ 
+//2nd FOR loop. Display Even indexes values
+Numbers in the Even indexes are: 5 4 3 8 3 4 5 0
+Total Value (Even indexes):  32
+ 
+//3rd FOR loop. Display Odd indexes values
+Numbers in the Odd indexes are: 2 7 1 6 1 2 9 3
+Total Value (Odd indexes):  31
+ 
+Do you want to enter again?[Y/N]: y
+
+
+==========================================================
+MP #14 - done
+
+Make a program that will count how many words are there in the inputted string.  The program will loop and will exit if the user wants to. Restriction is a must.
+ 
+OUTPUT:
+ 
+Enter String: I Love OOP
+There are *3 words in this string.
+
+Do you want to play again? [Y/N]: Y
+ 
+Enter String: I Love Object Oriented Programming
+There are *5 words in this string.
+
+Do you want to enter again?[Y/N]: y
+
+
+==========================================================
+MP #15 - done
+
+Create a program that will read the 5 inputs from the user. It can be an alphanumeric. Then it will check if the input is a String, number or a letter(character). If it's a String it will count its length and display the ASCII CODE of every letter. If it's a number it will display its ASCII CODE Value and the number before it. If it's a letter(character) it will display the next letter of it. RESTRICTION is optional. Make it LOOP.
+ 
+OUTPUT:
+ 
+Enter Input#1: Mary Anne
+Enter Input#2: 23
+Enter Input#3: J
+Enter Input#4: 5
+Enter Input#5: M
+ 
+*****************
+Result: 
+ 
+First Input#1: Mary Anne
+M=77 a=97 r=114 y=121 A=65 n=110 n=110 e=101
+ 
+Second Input#2: 23
+2=50 3=51 Number before 23 is [22]
+ 
+Third Input#3: J
+After J next is [K]
+ 
+Fourth Input#4: 5
+5=53 Number before 5 is [4]
+ 
+Fifth Input#5: M
+After M next is [N]
+ 
+Do you want to enter again?[Y/N]: y
+
+
+
