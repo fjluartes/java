@@ -1,4 +1,4 @@
-public class Animal {
+abstract class Animal {
     picture;
     food;
     hunger;
@@ -16,7 +16,7 @@ abstract class Canine extends Animal {
     public void roam() {}
 }
 
-public class Feline extends Animal {
+abstract class Feline extends Animal {
     roam() {}
 }
 
@@ -87,3 +87,7 @@ class PetOwner {
         v.giveShot(h); // hippo's makeNoise()
     }
 }
+
+// abstract method: no body
+public abstract void eat();
+

@@ -1,4 +1,5 @@
-OBJECT-ORIENTED PROGRAMMING (Ch7: Objectville)
+OBJECT-ORIENTED PROGRAMMING (Head First Java)
+Ch7: Objectville
 INHERITANCE TREE
 1. Look for objects that have common attributes and behaviors.
 2. Design a class that represents the common state and behavior. (superclass)
@@ -42,3 +43,14 @@ OVERLOADING
 - changing the arguments in a method in subclasses
 * two methods with the same name but different argument lists
 * no polymorphism
+
+Ch8: Polymorphism
+ABSTRACT
+Class
+- to prevent instantiation of certain classes
+- class must be extended
+Method
+- method with no body
+- method must be overridden
+* abstract methods must be in abstract classes
+* abstract methods must be implemented(overridden)
