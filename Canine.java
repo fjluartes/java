@@ -1,3 +1,4 @@
+// sample class Canine
 abstract class Animal {
 	public void roam() {}
 	public void makeNoise() {}
