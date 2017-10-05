@@ -53,4 +53,4 @@ Method
 - method with no body
 - method must be overridden
 * abstract methods must be in abstract classes
-* abstract methods must be implemented(overridden)
+* abstract methods must be implemented(overridden(provide a body))
