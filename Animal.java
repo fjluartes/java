@@ -13,7 +13,7 @@ abstract class Animal {
 
 // abstract: for compiler to prevent instantiation of this class
 abstract class Canine extends Animal {
-    public void roam() {}
+	public void roam() {}
 }
 
 abstract class Feline extends Animal {
