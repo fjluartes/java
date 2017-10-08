@@ -3,7 +3,7 @@ Machine problems (*name*_M*num*.java)
 
 I-love-programming.txt Machine Problems (MP*num*_*name*.java)
 
-programming-challenges.txt
+programming-challenges-java.txt
 
 Head First Java (2nd edition) programs
 
