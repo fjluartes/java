@@ -6,6 +6,7 @@ public class Booking {
     int seatNumber;
     int flightNumber;
     int bookingNumber;
+    String seatChoice;
     String depCity;
     String arrCity;
     String date;
@@ -14,17 +15,24 @@ public class Booking {
     public void getDetails() {
         Random r = new Random();
         date = input.getUserInput("Enter booking date(DD-MM-YYYY): ");
-        System.out.println("Booking date is: " + date);
         depCity = input.getUserInput("Enter departure city: ");
-        System.out.println("Departure city is: " + depCity.toUpperCase());
         arrCity = input.getUserInput("Enter arrival city: ");
-        System.out.println("Arrival city is: " + arrCity.toUpperCase());
-
+        seatChoice = input.getUserInput("Enter seat type(ECONOMY or BUSINESS): "); 
         flightNumber = 1 + r.nextInt(1000);
         bookingNumber = 1 + r.nextInt(10000);
         seatNumber = 1 + r.nextInt(99);
-        System.out.println("Flight number is: " + flightNumber);
-        System.out.println("Booking number is: " + bookingNumber);
-        System.out.println("Seat number is: " + seatNumber);
+        
+        System.out.println("");
+        System.out.println("BOOKING DETAILS");
+        System.out.println("BOOKING NUMBER:     " + bookingNumber);
+        System.out.println("BOOKING DATE:       " + date);
+        System.out.println("DEPARTURE CITY:     " + depCity.toUpperCase());
+        System.out.println("ARRIVAL CITY:       " + arrCity.toUpperCase());
+        System.out.println("FLIGHT NUMBER:      " + flightNumber);
+        System.out.println("SEAT NUMBER:        " + seatNumber);
+        if (seatChoice.toUpperCase().equals(seatType[0]) ||
+            seatChoice.toUpperCase().equals(seatType[1])) {
+            System.out.println("SEAT CLASS:         " + seatChoice.toUpperCase());
+        }
     } 
 }
