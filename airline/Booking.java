@@ -1,50 +1,63 @@
-// Booking: Booking class for airline reservation system
+// Booking: booking class for airline reservation
 public class Booking {
-    GetBookingDetails input = new GetBookingDetails();
-    boolean[] isSeatTaken = new boolean[20];
-    String[] seatType = {"ECONOMY", "BUSINESS"};
-    String getSeat = null;
-    String choice = null;
-    int seatNum = 0;
-    int i = 5, j = 0;
-    String seatClass = null;
+    GetDetails input = new GetDetails();
+    boolean[] seats = new boolean[20];
+    String get = null;
+    int num = 0, seatNum = 0;
 
-    public void getSeatType() {
-        System.out.println("WELCOME TO AIR PHILIPPINES");
-        System.out.println("Which seat type do you want? ");
-        getSeat = input.getUserInput("SELECT 1 - BUSINESS or 2 - ECONOMY: ");
+    public void start() {
+        while(true) {
+            makeReservation();
+        }
+    }
 
-        if (getSeat.equals("2")) {
-            seatClass = seatType[0];
-            if ((isSeatTaken[i] == false) && (i < 20)) {
-                isSeatTaken[i] = true;
-                seatNum = i + 1;
-                i++;
-            }
-            
-            if (i == 20) {
-                choice = input.getUserInput("Do you want to switch to BUSINESS class? (y/n): ");
-                if (choice.equals("y")) {
-                    getSeat = "1";
-                } else if (choice.equals("n")) {
-                    System.out.println("Next flight is in 3 hours.");
-                } else {
-                    System.out.println("Invalid choice.");
+    private void makeReservation() {
+        System.out.println("WELCOME TO AIR LINES");
+        System.out.println("Which seat class do you want?");
+        get = input.getUserInput("Select 1 - BUSINESS and 2 - ECONOMY: ");
+
+        // code for assigning seats
+        if (Integer.parseInt(get) == 1) {
+            num = reservation(SeatType.BUSINESS);
+            boardingPass(num, SeatType.BUSINESS);
+        } else if (Integer.parseInt(get) == 2) {
+            reservation(SeatType.ECONOMY);
+            boardingPass(num, SeatType.ECONOMY);
+        } else {
+            System.out.println("Invalid choice.");
+        }
+
+        if (seats[19] == true) {
+            System.exit(0);
+        }
+    }
+    
+    private int reservation(SeatType s) {
+        if (s == SeatType.BUSINESS) {
+            for (int i = 0; i < 5; i++) {
+                if (seats[i] == false) {
+                    seats[i] = true;
+                    seatNum = i;
+                    break;
                 }
             }
         }
-
-        if (getSeat.equals("1")) {
-            seatClass = seatType[1];
-            if ((j < 5) && (isSeatTaken[j] == false)) {
-                isSeatTaken[j] = true;
-                seatNum = j + 1;
-                j++;
+        
+        if (s == SeatType.ECONOMY) {
+            for (int j = 5; j < 20; j++) {
+                if (seats[j] == false) {
+                    seats[j] = true;
+                    seatNum = j;
+                    break;
+                }
             }
         }
-
+        return seatNum;
+    }
+        
+    private void boardingPass(int reservation, SeatType s) {
         System.out.println("BOARDING PASS");
-        System.out.println("SEAT NUMBER: " + seatNum); 
-        System.out.println("SEAT TYPE:   " + seatClass);
+        System.out.println("SEAT NUMBER: " + reservation);
+        System.out.println("SEAT CLASS:  " + s);
     }
 }

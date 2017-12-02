@@ -1,7 +1,6 @@
-// GetBookingDetails
 import java.io.*;
 
-public class GetBookingDetails {
+public class GetDetails {
     public String getUserInput(String prompt) {
         String inputLine = null;
         System.out.println(prompt + " ");

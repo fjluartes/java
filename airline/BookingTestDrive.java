@@ -1,7 +1,7 @@
-// BookingTestDrive: main class for airline reservation system
+// BookingTestDrive: main class for airline reservation
 public class BookingTestDrive {
     public static void main(String[] args) {
-        Booking book = new Booking();
-        book.getSeatType();
+        Booking b = new Booking();
+        b.start();
     }
 }
