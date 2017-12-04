@@ -14,7 +14,7 @@ class GravityCalculator {
         initialVelocity = keyboard.nextDouble();
         System.out.println("Enter time(s): ");
         fallingTime = keyboard.nextDouble();
-        gravity = -9.8;
+        gravity = -9.81;
 
         finalPosition = (0.5 * gravity * Math.pow(fallingTime, 2)) + (initialVelocity * fallingTime) + initialPosition;
         System.out.println("Displacement after " + fallingTime + " seconds is " + finalPosition + " m.");
