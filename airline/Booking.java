@@ -16,38 +16,35 @@ public class Booking {
         System.out.println("Which seat class do you want?");
         get = input.getUserInput("Select 1 - BUSINESS and 2 - ECONOMY: ");
 
-        // code for assigning seats
         if (Integer.parseInt(get) == 1) {
             num = reservation(SeatType.BUSINESS);
             boardingPass(num, SeatType.BUSINESS);
         } else if (Integer.parseInt(get) == 2) {
-            reservation(SeatType.ECONOMY);
+            num = reservation(SeatType.ECONOMY);
             boardingPass(num, SeatType.ECONOMY);
-        } else {
-            System.out.println("Invalid choice.");
         }
 
-        if (seats[19] == true) {
+		if ((seats[4] == true) && (seats[19] == true)) {
             System.exit(0);
         }
     }
     
     private int reservation(SeatType s) {
-        if (s == SeatType.BUSINESS) {
+		if (s == SeatType.BUSINESS) {
             for (int i = 0; i < 5; i++) {
                 if (seats[i] == false) {
                     seats[i] = true;
-                    seatNum = i;
+					seatNum = i;
                     break;
                 }
             }
-        }
-        
-        if (s == SeatType.ECONOMY) {
+		}
+
+		if (s == SeatType.ECONOMY) {
             for (int j = 5; j < 20; j++) {
                 if (seats[j] == false) {
                     seats[j] = true;
-                    seatNum = j;
+					seatNum = j;					
                     break;
                 }
             }
@@ -56,8 +53,10 @@ public class Booking {
     }
         
     private void boardingPass(int reservation, SeatType s) {
+		System.out.println("");
         System.out.println("BOARDING PASS");
-        System.out.println("SEAT NUMBER: " + reservation);
+        System.out.println("SEAT NUMBER: " + (reservation + 1));
         System.out.println("SEAT CLASS:  " + s);
+		System.out.println("");
     }
 }
