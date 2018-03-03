@@ -3,7 +3,7 @@ public class WordCount {
     public static void main(String[] args) {
         Counter cnt = new Counter();
         String test = "The quick brown etaoin shrdru";
-        String test2 = "Exception in thread \"main\" java lang Array Index Out Of ounds Exception:";
+        String test2 = "Exception in thread \"main\" java lang Array Index Out Of Bounds Exception:";
         cnt.wordCounter(test);
         cnt.wordCounter(test2);
     }
